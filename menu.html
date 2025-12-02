@@ -1,32 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu - My Coffee Shop</title>
-    <link rel="stylesheet" href="style.css        <h1>Our Menu</h1>
-        <nav>
-            index.htmlHome</a>
-            menu.htmlMenu</a>
-            order.htmlOrder</a>
-        </nav>
+    <title>Menu — My Coffee Shop</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="assets/logo.svg" alt="Logo" class="logo" />
+                <span>My Coffee Shop</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html" class="active">Menu</a>
+                <a class="btn btn-primary" href="order.html">Order</a>
+            </nav>
+        </div>
     </header>
-    <main>
-       2>Coffee</h2>
-        <ul>
-            <li>Espresso - $2.50</li>
-            <li>Cappuccino - $3.50</li>
-            <li>Latte - $3.00</li>
-        </ul>
-        <h2>Snacks</h2>
-        <ul>
-            <li>Croissant - $2.00</li>
-            <li>Muffin - $1.50</li>
-        </ul>
+
+    <main class="container">
+        <h1>Menu</h1>
+        <p class="muted">Simple prices. Quality ingredients.</p>
+
+        <section class="menu-grid">
+            <article class="card">
+                <h2>Coffee</h2>
+                <ul class="menu-list">
+                    <li><span>Espresso</span><span class="price">R25</span></li>
+                    <li><span>Americano</span><span class="price">R28</span></li>
+                    <li><span>Flat White</span><span class="price">R35</span></li>
+                    <li><span>Cappuccino</span><span class="price">R32</span></li>
+                    <li><span>Latte</span><span class="price">R34</span></li>
+                </ul>
+            </article>
+            <article class="card">
+                <h2>Tea</h2>
+                <ul class="menu-list">
+                    <li><span>Rooibos</span><span class="price">R22</span></li>
+                    <li><span>Earl Grey</span><span class="price">R24</span></li>
+                    <li><span>Green Tea</span><span class="price">R24</span></li>
+                </ul>
+            </article>
+            <article class="card">
+                <h2>Bakery</h2>
+                <ul class="menu-list">
+                    <li><span>Croissant</span><span class="price">R26</span></li>
+                    <li><span>Blueberry Muffin</span><span class="price">R24</span></li>
+                    <li><span>Chocolate Brownie</span><span class="price">R28</span></li>
+                </ul>
+            </article>
+        </section>
+
+        <div class="cta-bar">
+            <a class="btn btn-primary" href="order.html">Order Now</a>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2025 My Coffee Shop</p>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 My Coffee Shop</p>
+        </div>
     </footer>
 </body>
 </html>

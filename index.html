@@ -1,22 +1,86 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>My Coffee Shop</title>
-    style.css
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Coffee Shop</h1>
-        <nav>
-            <a hreftmlHome</a>
-            menu.htmlMenu</a>
-            order.htmlOrder</a>
-        </nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="assets/logo.svg" alt="Logo" class="logo" />
+                <span>My Coffee Shop</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a class="btn btn-primary" href="order.html">Order</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h2>Fresh Coffee, Great Vibes</h2>
-        <p>Visit us for the best coffee in town!</p>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Fresh Coffee. Clean Design.</h1>
+            <p>Black, white, and quicksilver vibes. Brewed daily.</p>
+            <div class="cta-group">
+                <a class="btn btn-primary" href="order.html">Order Now</a>
+                <a class="btn btn-outline" href="menu.html">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="features">
+            <div class="feature">
+                <h3>Quality Beans</h3>
+                <p>Sourced from sustainable farms and roasted to perfection.</p>
+            </div>
+            <div class="feature">
+                <h3>Minimalist Space</h3>
+                <p>Designed with a monochrome palette for calm and focus.</p>
+            </div>
+            <div class="feature">
+                <h3>Fast Pickup</h3>
+                <p>Order online and collect in minutes.</p>
+            </div>
+        </section>
+
+        <section class="info-grid">
+            <div>
+                <h2>Hours</h2>
+                <ul class="plain">
+                    <li>Mon–Fri: 7:00–17:00</li>
+                    <li>Sat: 8:00–14:00</li>
+                    <li>Sun: Closed</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contact</h2>
+                <ul class="plain">
+                    <li><a href="tel:+27123456789">+27 12 345 6789</a></li>
+                    <li><a href="mailto:orders@example.com">orders@example.com</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Location</h2>
+                <p>123 Coffee Lane, Pretoria</p>
+            </div>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 My Coffee Shop</p>
+        </div>
+    </footer>
 </body>
 </html>
